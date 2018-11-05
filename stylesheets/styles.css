@@ -1,0 +1,100 @@
+@font-face {
+	font-family: Graphik;
+	font-weight: Regular;
+	src: url('../fonts/Graphik-Regular.otf');
+}
+
+@font-face {
+	font-family: Graphik;
+	font-weight: Light;
+	src: url('../fonts/Graphik-Light.otf');
+}
+
+body {
+	background-color: black;
+}
+
+h1 {
+	font-family: Graphik, Helvetica, Arial;
+	font-size: 2.25rem;
+	font-weight: Light;
+	letter-spacing: 0.08rem;
+	padding: 0.5rem 0;
+	color: #000;
+}
+
+h1:before {
+	margin-left: 1.5rem;
+	margin-right: 1rem;
+	background-size: 2.2rem 2.2rem;
+	width: 2.2rem;
+	height: 2.2rem;
+	display: inline-block;
+	content: "";
+}
+
+h1#emotions:before {
+	background-image: url('../images/emotions.png');
+}
+
+h1#status:before {
+	background-image: url('../images/pimples.png');
+
+}
+
+p {
+	font-family: Graphik;
+	font-size: 2rem;
+	font-weight: Regular;
+	color: #5F5F62;
+	letter-spacing: 0.08rem;
+	line-height: 3.5rem;
+}
+
+ul {
+  list-style-type: none;
+  color: #fff;
+  font-family: Graphik, Helvetica, Arial;
+  font-size: 2.0rem;
+}
+
+#right-data {
+	text-align: right;
+}
+
+#right-data h1 {
+	font-family: Graphik, Helvetica, Arial;
+	font-weight: Light;
+	font-size: 8rem;
+	margin-top: 6rem;
+	color: #FFF;
+}
+
+#right-data li {
+	margin-top: -2.5rem;
+}
+
+.header {
+	margin-top: 4rem;
+  position: relative;
+  width: 200px;
+  position: relative;
+  color: #FFF;
+  background: #fff;
+}
+
+.header:after {
+  content: " ";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: #fff;
+  transform-origin: bottom left;
+  -ms-transform: skew(-30deg, 0deg);
+  -webkit-transform: skew(-30deg, 0deg);
+  transform: skew(-30deg, 0deg);
+}
